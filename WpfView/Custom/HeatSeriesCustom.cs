@@ -29,7 +29,6 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using LiveCharts.Custom;
 using LiveCharts.Definitions.Points;
 using LiveCharts.Definitions.Series;
 using LiveCharts.Dtos;
@@ -43,7 +42,7 @@ namespace LiveCharts.Wpf
     /// <summary>
     /// Use a HeatSeries in a cartesian chart to draw heat maps.
     /// </summary>
-    public class HeatSeries : Series, IHeatSeriesView
+    public class HeatSeriesCustom : Series, IHeatSeriesView
     {
         #region Constructors
 
@@ -182,11 +181,11 @@ namespace LiveCharts.Wpf
             if (DataLabels)
             {
 
-                var asd = (HeatMapPoint)point.Instance;
+                var asd = point;
                 
                 pbv.DataLabel = UpdateLabelContent(new DataLabelViewModel
                 {
-                    FormattedText2 = asd.Cards,
+                    FormattedText2 = "asd",
                     FormattedText = label,
                     Point = point
                 }, pbv.DataLabel);

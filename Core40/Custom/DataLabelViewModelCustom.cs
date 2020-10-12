@@ -25,7 +25,7 @@ namespace LiveCharts
     /// <summary>
     /// Describes a data label view model
     /// </summary>
-    public class DataLabelViewModel
+    public class DataLabelViewModelCustom
     {
         /// <summary>
         /// Gets or sets the formatted text of the current point
@@ -34,6 +34,12 @@ namespace LiveCharts
         /// The formatted text.
         /// </value>
         public string FormattedText { get; set; }
+        /// <summary>
+        /// Gets or sets the formatted2 text of the current point
+        /// </summary>
+        /// <value>
+        /// The formatted2 text.
+        /// </value>
         public string FormattedText2 { get; set; }
         /// <summary>
         /// Gets the instance of the current point.
