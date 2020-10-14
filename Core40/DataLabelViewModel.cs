@@ -34,7 +34,6 @@ namespace LiveCharts
         /// The formatted text.
         /// </value>
         public string FormattedText { get; set; }
-        public string FormattedText2 { get; set; }
         /// <summary>
         /// Gets the instance of the current point.
         /// </summary>

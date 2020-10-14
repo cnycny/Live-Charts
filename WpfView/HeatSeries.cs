@@ -181,12 +181,8 @@ namespace LiveCharts.Wpf
 
             if (DataLabels)
             {
-
-                var asd = (HeatMapPoint)point.Instance;
-                
                 pbv.DataLabel = UpdateLabelContent(new DataLabelViewModel
                 {
-                    FormattedText2 = asd.Cards,
                     FormattedText = label,
                     Point = point
                 }, pbv.DataLabel);

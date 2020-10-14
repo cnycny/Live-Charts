@@ -71,7 +71,6 @@
     <Compile Include="Configurations\PolarMapper.cs" />
     <Compile Include="Configurations\WeightedMapper.cs" />
     <Compile Include="Custom\HeatMapPoint.cs" />
-    <Compile Include="Custom\DataLabelViewModelCustom.cs" />
     <Compile Include="DataLabelViewModel.cs" />
     <Compile Include="DateAxisCore.cs" />
     <Compile Include="DateAxisWindow.cs" />
