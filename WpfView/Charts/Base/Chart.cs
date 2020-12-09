@@ -262,7 +262,7 @@ namespace LiveCharts.Wpf.Charts.Base
         /// Gets or sets the chart current canvas
         /// </summary>
         protected Canvas Canvas { get; set; }
-        internal Canvas DrawMargin { get; set; }
+        protected Canvas DrawMargin { get; set; }
         internal Popup TooltipContainer { get; set; }
 
         /// <summary>
@@ -1117,7 +1117,7 @@ namespace LiveCharts.Wpf.Charts.Base
         /// </summary>
         /// <param name="senderPoint">The sender point.</param>
         /// <returns></returns>
-        protected internal virtual Point GetTooltipPosition(ChartPoint senderPoint)
+        protected virtual Point GetTooltipPosition(ChartPoint senderPoint)
         {
             var xt = senderPoint.ChartLocation.X;
             var yt = senderPoint.ChartLocation.Y;
@@ -1128,7 +1128,7 @@ namespace LiveCharts.Wpf.Charts.Base
             return new Point(xt, yt);
         }
 
-        internal SeriesCollection GetDesignerModeCollection()
+        protected SeriesCollection GetDesignerModeCollection()
         {
             var r = new Random();
             SeriesCollection mockedCollection;

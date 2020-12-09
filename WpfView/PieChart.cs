@@ -93,7 +93,7 @@ namespace LiveCharts.Wpf
         /// </summary>
         /// <param name="senderPoint">The sender point.</param>
         /// <returns></returns>
-        protected internal override Point GetTooltipPosition(ChartPoint senderPoint)
+        protected override Point GetTooltipPosition(ChartPoint senderPoint)
         {
             var pieSlice = ((PiePointView) senderPoint.View).Slice;
 

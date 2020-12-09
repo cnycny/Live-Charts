@@ -28,7 +28,7 @@ using LiveCharts.Wpf.Charts.Base;
 
 namespace LiveCharts.Wpf.Components
 {
-    internal class ChartUpdater : LiveCharts.ChartUpdater
+    public class ChartUpdater : LiveCharts.ChartUpdater
     {
         public ChartUpdater(TimeSpan frequency)
         {

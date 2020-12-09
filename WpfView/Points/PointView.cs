@@ -28,7 +28,7 @@ using LiveCharts.Dtos;
 
 namespace LiveCharts.Wpf.Points
 {
-    internal class PointView : IChartPointView
+    public class PointView : IChartPointView
     {
         public Shape HoverShape { get; set; }
         public ContentControl DataLabel { get; set; }

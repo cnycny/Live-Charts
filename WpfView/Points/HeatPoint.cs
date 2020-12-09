@@ -30,7 +30,7 @@ using LiveCharts.Dtos;
 
 namespace LiveCharts.Wpf.Points
 {
-    internal class HeatPoint : PointView, IHeatPointView
+    public class HeatPoint : PointView, IHeatPointView
     {
         public Rectangle Rectangle { get; set; }
         public CoreColor ColorComponents { get; set; }
